@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <script src="jsy.js"></script>
+    <style>
+        .section {
+            background-color: #fdfcfc;
+            color: #000000;
+            border: 2px solid #000000;
+            margin: 20px;
+            padding: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+
+    }
+        .grid-item {
+            background-color: #ddd;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 20px;
+         }
+    </style>
+</head>
+
+<body>
+    <header> <h1>My favorite movies to watch</h1>
+    </header>
+    <div class="grid-container">
+        <div class="section">
+            <section>
+                <h2><i class="fa-solid fa-film"></i>Titles:</h2>
+                <ul id="list">
+                </ul>
+            </section>
+            <button onclick="delMovie()"><i class="fa-solid fa-trash"></i>Delete Selected</button>
+        </div>
+        <div class="section">
+            <h2>Add movie:</h2>
+            <section>
+                <form>
+                    <label for="title">Title:</label><br>
+                    <input type="text" id="title" name="title"><br>
+                    <label for="Year">Year:</label><br>
+                    <input type="text" id="Year" name="Year"><br>
+                    <label for="Actors">Actors:</label><br>
+                    <input type="text" id="Actors" name="Actors"><br><br>
+                    <button onclick="addMovie()" type="button"><i class="fa-solid fa-plus"></i>Add</button>
+                </form>
+            </section>
+        </div>
+    </div>
+<hr>
+<footer>
+    <h3>&copy My MovieDatabase. All rights reserved.</h3>
+</footer>
+</body>
+</html>
